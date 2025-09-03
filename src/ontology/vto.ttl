@@ -16,9 +16,12 @@
 
 <https://w3id.org/pmd/ao/vto.ttl> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://w3id.org/pmd/ao/vto/releases/2025-09-03/vto.ttl> ;
-                                   dcterms:description "None" ;
+                                   dcterms:creator "https://orcid.org/0000-0002-3092-0532" ;
+                                   dcterms:description "Vickers Test Ontology (VTO) has developed for representing the Vickers testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6507-1 standard." ;
                                    dcterms:license <https://creativecommons.org/licenses/unspecified> ;
-                                   dcterms:title "My Application Ontology" ;
+                                   dcterms:title "Vickers Test Ontology" ;
+                                   rdfs:label "vto" ;
+                                   owl:priorVersion "https://gitlab.com/kupferdigital/process-graphs/vickers-hardness-test" ;
                                    owl:versionInfo "2025-09-03" .
 
 #################################################################
@@ -10618,6 +10621,315 @@ co:PMD_0060009 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000027 ;
                rdfs:label "specification datum"@en ;
                skos:definition "A data item that provides specification for entities" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000001
+co:VTO_0000001 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000789 ;
+               obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:14705:ed-3:v1:en:term:3.1" ;
+               rdfs:label "vickers hardness"@en ;
+               skos:definition "value obtained by dividing the applied force by the surface area of the indentation computed from the mean of the measured diagonals of the indentations, assuming that the indentation is an imprint of the undeformed indenter" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000002
+co:VTO_0000002 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000001 ;
+               obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:14705:ed-3:v1:en:term:3.1" ;
+               rdfs:label "Vickers HV 5 ISO 6507"@en ;
+               skos:definition "Vickers hardness test when test force is more than 49.03 N" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000003
+co:VTO_0000003 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000774 ;
+               rdfs:label "Vickers hardness testing machine"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000004
+co:VTO_0000004 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020132 ;
+               rdfs:label "diagonal"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000005
+co:VTO_0000005 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "Verification process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000006
+co:VTO_0000006 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0040001 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "inter indentations distance"@en ;
+               skos:definition "The distance between the centres of two adjacent indentations" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000007
+co:VTO_0000007 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0040001 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "indentation to edge distance"@en ;
+               skos:definition "The distance from the edge of the test piece to the centre of each indentation" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000008
+co:VTO_0000008 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000029 ;
+               rdfs:label "indentation"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000009
+co:VTO_0000009 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:23718:ed-1:v1:en:term:1.4.12" ;
+               rdfs:label "indenter"@en ;
+               skos:definition "body with a hard tip, typically of diamond, hardmetal (tungsten carbide alloy), or, in special cases, steel, of specified geometry through which the test force is applied in the course of an indentation test" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000010
+co:VTO_0000010 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000603 ;
+               rdfs:label "indenter role"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000011
+co:VTO_0000011 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000603 ;
+               rdfs:label "hardness testing machine role"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000012
+co:VTO_0000012 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000602 ;
+               rdfs:label "optical measuring system"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000013
+co:VTO_0000013 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000012 ;
+               rdfs:label "vickers machine optical measuring system"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000014
+co:VTO_0000014 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000030 ;
+               rdfs:label "CRM" ,
+                          "certified reference material"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000015
+co:VTO_0000015 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000014 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "vickers reference material" ;
+               skos:definition "The vickers certified reference material is equivalent to the hardness reference block, i.e. a piece of material with a certified value and associated uncertainty." .
+
+
+###  https://w3id.org/pmd/co/VTO_0000016
+co:VTO_0000016 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000776 ;
+               obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:6507:-1:dis:ed-5:v1:en" ;
+               rdfs:label "Vickers hardness testing process"@en ;
+               skos:definition "A hardness testing process where hardness value of a material measured normally using a diamond indenter. A diamond indenter, in the form of a right pyramid with a square base and with a specified angle between opposite faces at the vertex, is forced into the surface of a test piece followed by measurement of the diagonal length of the indentation left in the surface after removal of the test force." .
+
+
+###  https://w3id.org/pmd/co/VTO_0000017
+co:VTO_0000017 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000145 ;
+               rdfs:label "uncertainty"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000018
+co:VTO_0000018 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "measuring process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000019
+co:VTO_0000019 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000018 ;
+               rdfs:label "temperature measuring process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000020
+co:VTO_0000020 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "expriment designing process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000021
+co:VTO_0000021 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000018 ;
+               rdfs:label "dimension measuring process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000022
+co:VTO_0000022 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "calculating process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000023
+co:VTO_0000023 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "reporting process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000024
+co:VTO_0000024 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020132 ;
+               rdfs:label "dimension"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000025
+co:VTO_0000025 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000145 ;
+               rdfs:label "angle"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000026
+co:VTO_0000026 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000023 ;
+               rdfs:label "certified reference material role"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000027
+co:VTO_0000027 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000603 ;
+               rdfs:label "optical measuring system role"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000028
+co:VTO_0000028 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020131 ;
+               rdfs:label "time"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000029
+co:VTO_0000029 rdf:type owl:Class ;
+               rdfs:subClassOf obo:IAO_0000030 ;
+               rdfs:label "textual entity"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000030
+co:VTO_0000030 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000029 ;
+               rdfs:label "equation textual entity"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000031
+co:VTO_0000031 rdf:type owl:Class ;
+               rdfs:subClassOf obo:IAO_0000033 ;
+               rdfs:label "standard"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000032
+co:VTO_0000032 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0060009 ;
+               rdfs:label "date specification datum"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000033
+co:VTO_0000033 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000119 "https://www.britannica.com/science/sample-preparation" ;
+               rdfs:label "sample preparation process"@en ;
+               skos:definition "the processes in which a representative piece of material is extracted from a larger amount and readied for analysis. " .
+
+
+###  https://w3id.org/pmd/co/VTO_0000034
+co:VTO_0000034 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020132 ;
+               rdfs:label "depth"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000035
+co:VTO_0000035 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000034 ;
+               obo:IAO_0000119 "https://mrmsmtbs-iitk.vlabs.ac.in/indent%20depth.html#:~:text=Indent%20depth%20is%20the%20depth,the%20plastic%20and%20elastic%20deformation." ;
+               rdfs:label "indentation depth"@en ;
+               skos:definition "Indent depth is the depth from the surface of the sample to the indenter tip or indentation depth of the indenter." .
+
+
+###  https://w3id.org/pmd/co/VTO_0000036
+co:VTO_0000036 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000017 ;
+               rdfs:label "vickers hardness uncertainty"@en ;
+               skos:definition "Vickers hardness measurement uncertainty is the expression of the statistical dispersion of the values attributed to a measured quantity." .
+
+
+###  https://w3id.org/pmd/co/VTO_0000037
+co:VTO_0000037 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "callibration process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000038
+co:VTO_0000038 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000037 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "vickers testing machine callibration process"@en ;
+               skos:definition "The process of calibration of Vickers testing machines and verification of Vickers hardness values." .
+
+
+###  https://w3id.org/pmd/co/VTO_0000039
+co:VTO_0000039 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000036 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "vickers hardness testing machine uncertainty"@en ;
+               skos:definition "Standard uncertainty of hardness testing machine when measuring CRM" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000040
+co:VTO_0000040 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000036 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "vickers hardness measurement resolution uncertainty"@en ;
+               skos:definition "The uncertainty derived from maximum permissible error" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000041
+co:VTO_0000041 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000036 ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
+               rdfs:label "vickers hardness bias uncertainty"@en ;
+               skos:definition "Standard uncertainty due to resolution of the indentation diognal measuring system" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000042
+co:VTO_0000042 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000001 ;
+               obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:14705:ed-3:v1:en:term:3.1" ;
+               rdfs:label "Vickers HV 0.2 ISO 6507"@en ;
+               skos:definition "Low-force Vickers hardness test when ranges of test force is between 1.961 and 49.03 N" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000043
+co:VTO_0000043 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000001 ;
+               obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:14705:ed-3:v1:en:term:3.1" ;
+               rdfs:label "Vickers HV 0.001 ISO 6507"@en ;
+               skos:definition "Vickers microhardness test when ranges of test force is between 0,009 807 and 1,961 N" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000044
+co:VTO_0000044 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000023 ;
+               rdfs:label "vickers indenter angle"@en ;
+               skos:definition "Mean angle between the opposite faces at the vertex of the pyramidal vickers indenter (nominally 136°)" .
+
+
+###  https://w3id.org/pmd/co/VTO_0000045
+co:VTO_0000045 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000033 ;
+               rdfs:label "polishing process"@en .
+
+
+###  https://w3id.org/pmd/co/VTO_0000046
+co:VTO_0000046 rdf:type owl:Class ;
+               rdfs:subClassOf co:VTO_0000045 ;
+               rdfs:label "electropolishing process"@en .
 
 
 #################################################################

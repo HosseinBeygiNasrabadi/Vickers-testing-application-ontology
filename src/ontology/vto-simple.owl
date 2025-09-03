@@ -1,18 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/pmd/ao/vto/vto-simple.owl#"
      xml:base="https://w3id.org/pmd/ao/vto/vto-simple.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/vto/vto-simple.owl">
         <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/vto/releases/2025-09-03/vto-simple.owl"/>
-        <terms:description>None</terms:description>
+        <terms:creator>https://orcid.org/0000-0002-3092-0532</terms:creator>
+        <terms:description>Vickers Test Ontology (VTO) has developed for representing the Vickers testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6507-1 standard.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <terms:title>My Application Ontology</terms:title>
+        <terms:title>Vickers Test Ontology</terms:title>
+        <rdfs:label>vto</rdfs:label>
+        <owl:priorVersion>https://gitlab.com/kupferdigital/process-graphs/vickers-hardness-test</owl:priorVersion>
         <owl:versionInfo>2025-09-03</owl:versionInfo>
     </owl:Ontology>
     
@@ -26,6 +31,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:label xml:lang="en">Definition Source</rdfs:label>
+        <rdfs:label xml:lang="de">Definitionsquelle</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -56,6 +83,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
 </rdf:RDF>
 
 
