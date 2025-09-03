@@ -1,8 +1,8 @@
 
 ![Build Status](https://github.com/HosseinBeygiNasrabadi/Vickers-testing-application-ontology/actions/workflows/qc.yml/badge.svg)
-# My Application Ontology
+# Vickers Test Ontology (VTO)
 
-Description: None
+Vickers Test Ontology (VTO) has developed for representing the Vickers testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6507-1 standard.
 
 More information can be found at http://obofoundry.org/ontology/vto
 
