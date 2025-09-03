@@ -24,6 +24,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<https://w3id.org/pmd/ao/VTO_0000000>))
+Declaration(Class(<https://w3id.org/pmd/ao/VTO_0000001>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000022>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000023>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000602>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000603>))
@@ -57,7 +59,6 @@ Declaration(Class(<https://w3id.org/pmd/co/VTO_0000020>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000021>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000022>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000023>))
-Declaration(Class(<https://w3id.org/pmd/co/VTO_0000024>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000025>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000026>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000027>))
@@ -80,6 +81,10 @@ Declaration(Class(<https://w3id.org/pmd/co/VTO_0000043>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000044>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000045>))
 Declaration(Class(<https://w3id.org/pmd/co/VTO_0000046>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000176>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000196>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000197>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000417>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
@@ -104,6 +109,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
@@ -111,6 +117,13 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <https://w3id.org/pmd/ao/VTO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/VTO_0000000> "root node"@en)
+
+# Class: <https://w3id.org/pmd/ao/VTO_0000001> (indentation diagonal)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/VTO_0000001> "indentation diagonal"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/VTO_0000001> "The straight-line distance between two opposite corners of an indentation made during a hardness test.")
+EquivalentClasses(<https://w3id.org/pmd/ao/VTO_0000001> ObjectIntersectionOf(<https://w3id.org/pmd/co/VTO_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <https://w3id.org/pmd/co/VTO_0000008>)))
+SubClassOf(<https://w3id.org/pmd/ao/VTO_0000001> <https://w3id.org/pmd/co/VTO_0000004>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000001> (vickers hardness)
 
@@ -129,16 +142,19 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000002> <https://w3id.org/pmd/co/VTO_00
 # Class: <https://w3id.org/pmd/co/VTO_0000003> (Vickers hardness testing machine)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000003> "Vickers hardness testing machine"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000003> "An instrument used to measure the hardness of materials by pressing a diamond-shaped indenter into the surface and evaluating the resulting indentation.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000003> <https://w3id.org/pmd/co/PMD_0000774>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000004> (diagonal)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000004> "diagonal"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000004> "A straight line connecting two non-adjacent corners or vertices of a polygon.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000004> <https://w3id.org/pmd/co/PMD_0020132>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000005> (Verification process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000005> "Verification process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000005> "A process of evaluating whether a system, component, or result meets specified requirements or standards.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000005> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000006> (inter indentations distance)
@@ -158,6 +174,7 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000007> <https://w3id.org/pmd/co/PMD_00
 # Class: <https://w3id.org/pmd/co/VTO_0000008> (indentation)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000008> "indentation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000008> "A localized impression or mark on a material’s surface created during a hardness test or mechanical interaction.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000008> <http://purl.obolibrary.org/obo/BFO_0000029>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000009> (indenter)
@@ -165,32 +182,40 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000008> <http://purl.obolibrary.org/obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/co/VTO_0000009> "https://www.iso.org/obp/ui#iso:std:iso:23718:ed-1:v1:en:term:1.4.12")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000009> "indenter"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000009> "body with a hard tip, typically of diamond, hardmetal (tungsten carbide alloy), or, in special cases, steel, of specified geometry through which the test force is applied in the course of an indentation test")
+EquivalentClasses(<https://w3id.org/pmd/co/VTO_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000602> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000176> <https://w3id.org/pmd/co/PMD_0000774>)))
+EquivalentClasses(<https://w3id.org/pmd/co/VTO_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000602> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <https://w3id.org/pmd/co/VTO_0000010>)))
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000009> <https://w3id.org/pmd/co/PMD_0000602>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000010> (indenter role)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000010> "indenter role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000010> "A role played by a tool or component that creates an indentation in a material to facilitate hardness testing or surface characterization.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000010> <https://w3id.org/pmd/co/PMD_0000603>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000011> (hardness testing machine role)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000011> "hardness testing machine role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000011> "A role played by a machine that performs hardness measurements to determine the resistance of materials to deformation.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000011> <https://w3id.org/pmd/co/PMD_0000603>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000012> (optical measuring system)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000012> "optical measuring system"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000012> "A system that uses light-based techniques, such as lasers or cameras, to measure physical properties, dimensions, or geometries of objects.")
+EquivalentClasses(<https://w3id.org/pmd/co/VTO_0000012> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000602> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <https://w3id.org/pmd/co/VTO_0000027>)))
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000012> <https://w3id.org/pmd/co/PMD_0000602>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000013> (vickers machine optical measuring system)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000013> "vickers machine optical measuring system"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000013> "An optical system integrated with a Vickers hardness testing machine to accurately measure the indentation and determine material hardness.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000013> <https://w3id.org/pmd/co/VTO_0000012>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000014> (certified reference material)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000014> "CRM")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000014> "certified reference material"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000014> "A material with one or more well-characterized properties, certified by an authoritative body, used to ensure accuracy and traceability in measurements.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000014> <http://purl.obolibrary.org/obo/BFO_0000030>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000015> (vickers reference material)
@@ -210,81 +235,92 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000016> <https://w3id.org/pmd/co/PMD_00
 # Class: <https://w3id.org/pmd/co/VTO_0000017> (uncertainty)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000017> "uncertainty"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000017> "A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000017> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000018> (measuring process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000018> "measuring process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000018> "A process of determining the value of a physical quantity by comparing it with a defined unit or standard.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000018> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000019> (temperature measuring process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000019> "temperature measuring process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000019> "A process of determining the thermal state of a system or material by comparing it against a defined temperature scale using appropriate instruments.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000019> <https://w3id.org/pmd/co/VTO_0000018>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000020> (expriment designing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000020> "expriment designing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000020> "A process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000020> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000021> (dimension measuring process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000021> "dimension measuring process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000021> "A process of determining the size, length, width, height, depth, or other geometrical features of an object using defined measurement methods or instruments.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000021> <https://w3id.org/pmd/co/VTO_0000018>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000022> (calculating process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000022> "calculating process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000022> "A process in which numerical or symbolic operations are performed to derive a result from given data or parameters.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000022> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000023> (reporting process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000023> "reporting process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000023> "A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000023> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
-# Class: <https://w3id.org/pmd/co/VTO_0000024> (dimension)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000024> "dimension"@en)
-SubClassOf(<https://w3id.org/pmd/co/VTO_0000024> <https://w3id.org/pmd/co/PMD_0020132>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000025> (angle)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000025> "angle"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000025> "A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000025> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000026> (certified reference material role)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000026> "certified reference material role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000026> "A role played by a material that provides certified property values to support calibration, validation, or quality assurance activities.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000026> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000027> (optical measuring system role)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000027> "optical measuring system role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000027> "A role played by a system that uses optical techniques to measure, observe, or evaluate physical properties or geometries of a material or object.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000027> <https://w3id.org/pmd/co/PMD_0000603>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000028> (time)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000028> "time"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000028> "A quality that characterizes the duration of processes or events")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000028> <https://w3id.org/pmd/co/PMD_0020131>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000029> (textual entity)
 
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/co/VTO_0000029> "http://purl.obolibrary.org/obo/IAO_0000300")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000029> "textual entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000029> "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000029> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000030> (equation textual entity)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000030> "equation textual entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000030> "A textual entity that represents mathematical or logical relationships using symbolic notation in text form.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000030> <https://w3id.org/pmd/co/VTO_0000029>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000031> (standard)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000031> "standard"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000031> "A specification content that formally defines agreed-upon rules, criteria, or requirements to guide actions or decisions.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000031> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000032> (date specification datum)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000032> "date specification datum"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000032> "A specification datum that represents a date or time interval associated with another specification.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000032> <https://w3id.org/pmd/co/PMD_0060009>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000033> (sample preparation process)
@@ -297,6 +333,7 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000033> <http://purl.obolibrary.org/obo
 # Class: <https://w3id.org/pmd/co/VTO_0000034> (depth)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000034> "depth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000034> "The distance from a reference surface or point to a specific point or feature along a perpendicular or defined direction.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000034> <https://w3id.org/pmd/co/PMD_0020132>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000035> (indentation depth)
@@ -315,6 +352,7 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000036> <https://w3id.org/pmd/co/VTO_00
 # Class: <https://w3id.org/pmd/co/VTO_0000037> (callibration process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000037> "callibration process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000037> "A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000037> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000038> (vickers testing machine callibration process)
@@ -361,18 +399,22 @@ SubClassOf(<https://w3id.org/pmd/co/VTO_0000043> <https://w3id.org/pmd/co/VTO_00
 
 # Class: <https://w3id.org/pmd/co/VTO_0000044> (vickers indenter angle)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/co/VTO_0000044> "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000044> "vickers indenter angle"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000044> "Mean angle between the opposite faces at the vertex of the pyramidal vickers indenter (nominally 136°)")
+EquivalentClasses(<https://w3id.org/pmd/co/VTO_0000044> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000417> <https://w3id.org/pmd/co/VTO_0000025>)))
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000044> <https://w3id.org/pmd/co/PMD_0000023>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000045> (polishing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000045> "polishing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000045> "surface finishing process that smooths or shines a material by mechanical, chemical, or electrochemical means to improve its appearance or properties.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000045> <https://w3id.org/pmd/co/VTO_0000033>)
 
 # Class: <https://w3id.org/pmd/co/VTO_0000046> (electropolishing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/VTO_0000046> "electropolishing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/VTO_0000046> "An electrochemical process that smooths and brightens a metal surface by selectively removing material through anodic dissolution.")
 SubClassOf(<https://w3id.org/pmd/co/VTO_0000046> <https://w3id.org/pmd/co/VTO_0000045>)
 
 

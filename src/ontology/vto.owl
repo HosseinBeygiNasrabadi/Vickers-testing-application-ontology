@@ -4559,6 +4559,33 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- https://w3id.org/pmd/ao/VTO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/ao/VTO_0000001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/VTO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">indentation diagonal</rdfs:label>
+        <skos:definition>The straight-line distance between two opposite corners of an indentation made during a hardness test.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000000">
@@ -7725,7 +7752,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <!-- https://w3id.org/pmd/co/PMD_0000814 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000814">
-        <owl:equivalentClass rdf:nodeID="genid345"/>
+        <owl:equivalentClass rdf:nodeID="genid350"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7738,7 +7765,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <rdfs:label xml:lang="en">laboratory</rdfs:label>
         <skos:definition xml:lang="en">A place equipped for experimental study in a science or for testing and analysis.</skos:definition>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid345">
+    <owl:Class rdf:nodeID="genid350">
         <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
             <owl:Restriction>
@@ -7750,7 +7777,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000814"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid345"/>
+        <owl:annotatedTarget rdf:nodeID="genid350"/>
         <co:PMD_0001032>issue: https://github.com/materialdigital/core-ontology/issues/101</co:PMD_0001032>
     </owl:Axiom>
     
@@ -14087,6 +14114,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000003">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000774"/>
         <rdfs:label xml:lang="en">Vickers hardness testing machine</rdfs:label>
+        <skos:definition>An instrument used to measure the hardness of materials by pressing a diamond-shaped indenter into the surface and evaluating the resulting indentation.</skos:definition>
     </owl:Class>
     
 
@@ -14096,6 +14124,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000004">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
         <rdfs:label xml:lang="en">diagonal</rdfs:label>
+        <skos:definition>A straight line connecting two non-adjacent corners or vertices of a polygon.</skos:definition>
     </owl:Class>
     
 
@@ -14105,6 +14134,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">Verification process</rdfs:label>
+        <skos:definition>A process of evaluating whether a system, component, or result meets specified requirements or standards.</skos:definition>
     </owl:Class>
     
 
@@ -14136,6 +14166,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:label xml:lang="en">indentation</rdfs:label>
+        <skos:definition>A localized impression or mark on a material’s surface created during a hardness test or mechanical interaction.</skos:definition>
     </owl:Class>
     
 
@@ -14143,7 +14174,41 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <!-- https://w3id.org/pmd/co/VTO_0000009 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000602"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000774"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000602"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000774"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>https://www.iso.org/obp/ui#iso:std:iso:23718:ed-1:v1:en:term:1.4.12</obo:IAO_0000119>
         <rdfs:label xml:lang="en">indenter</rdfs:label>
         <skos:definition>body with a hard tip, typically of diamond, hardmetal (tungsten carbide alloy), or, in special cases, steel, of specified geometry through which the test force is applied in the course of an indentation test</skos:definition>
@@ -14156,6 +14221,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000603"/>
         <rdfs:label xml:lang="en">indenter role</rdfs:label>
+        <skos:definition>A role played by a tool or component that creates an indentation in a material to facilitate hardness testing or surface characterization.</skos:definition>
     </owl:Class>
     
 
@@ -14165,6 +14231,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000011">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000603"/>
         <rdfs:label xml:lang="en">hardness testing machine role</rdfs:label>
+        <skos:definition>A role played by a machine that performs hardness measurements to determine the resistance of materials to deformation.</skos:definition>
     </owl:Class>
     
 
@@ -14172,8 +14239,26 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <!-- https://w3id.org/pmd/co/VTO_0000012 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000012">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000602"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000027"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">optical measuring system</rdfs:label>
+        <skos:definition>A system that uses light-based techniques, such as lasers or cameras, to measure physical properties, dimensions, or geometries of objects.</skos:definition>
     </owl:Class>
     
 
@@ -14183,6 +14268,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000013">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000012"/>
         <rdfs:label xml:lang="en">vickers machine optical measuring system</rdfs:label>
+        <skos:definition>An optical system integrated with a Vickers hardness testing machine to accurately measure the indentation and determine material hardness.</skos:definition>
     </owl:Class>
     
 
@@ -14193,6 +14279,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label>CRM</rdfs:label>
         <rdfs:label xml:lang="en">certified reference material</rdfs:label>
+        <skos:definition>A material with one or more well-characterized properties, certified by an authoritative body, used to ensure accuracy and traceability in measurements.</skos:definition>
     </owl:Class>
     
 
@@ -14224,6 +14311,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <rdfs:label xml:lang="en">uncertainty</rdfs:label>
+        <skos:definition>A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie.</skos:definition>
     </owl:Class>
     
 
@@ -14233,6 +14321,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">measuring process</rdfs:label>
+        <skos:definition>A process of determining the value of a physical quantity by comparing it with a defined unit or standard.</skos:definition>
     </owl:Class>
     
 
@@ -14242,6 +14331,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000019">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000018"/>
         <rdfs:label xml:lang="en">temperature measuring process</rdfs:label>
+        <skos:definition>A process of determining the thermal state of a system or material by comparing it against a defined temperature scale using appropriate instruments.</skos:definition>
     </owl:Class>
     
 
@@ -14251,6 +14341,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">expriment designing process</rdfs:label>
+        <skos:definition>A process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data.</skos:definition>
     </owl:Class>
     
 
@@ -14260,6 +14351,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000021">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000018"/>
         <rdfs:label xml:lang="en">dimension measuring process</rdfs:label>
+        <skos:definition>A process of determining the size, length, width, height, depth, or other geometrical features of an object using defined measurement methods or instruments.</skos:definition>
     </owl:Class>
     
 
@@ -14269,6 +14361,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">calculating process</rdfs:label>
+        <skos:definition>A process in which numerical or symbolic operations are performed to derive a result from given data or parameters.</skos:definition>
     </owl:Class>
     
 
@@ -14278,15 +14371,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">reporting process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/VTO_0000024 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
-        <rdfs:label xml:lang="en">dimension</rdfs:label>
+        <skos:definition>A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation.</skos:definition>
     </owl:Class>
     
 
@@ -14296,6 +14381,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <rdfs:label xml:lang="en">angle</rdfs:label>
+        <skos:definition>A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object.</skos:definition>
     </owl:Class>
     
 
@@ -14305,6 +14391,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">certified reference material role</rdfs:label>
+        <skos:definition>A role played by a material that provides certified property values to support calibration, validation, or quality assurance activities.</skos:definition>
     </owl:Class>
     
 
@@ -14314,6 +14401,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000027">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000603"/>
         <rdfs:label xml:lang="en">optical measuring system role</rdfs:label>
+        <skos:definition>A role played by a system that uses optical techniques to measure, observe, or evaluate physical properties or geometries of a material or object.</skos:definition>
     </owl:Class>
     
 
@@ -14323,6 +14411,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000028">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <rdfs:label xml:lang="en">time</rdfs:label>
+        <skos:definition>A quality that characterizes the duration of processes or events</skos:definition>
     </owl:Class>
     
 
@@ -14331,7 +14420,9 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000300</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">textual entity</rdfs:label>
+        <skos:definition>A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</skos:definition>
     </owl:Class>
     
 
@@ -14341,6 +14432,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000030">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000029"/>
         <rdfs:label xml:lang="en">equation textual entity</rdfs:label>
+        <skos:definition>A textual entity that represents mathematical or logical relationships using symbolic notation in text form.</skos:definition>
     </owl:Class>
     
 
@@ -14350,6 +14442,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:label xml:lang="en">standard</rdfs:label>
+        <skos:definition>A specification content that formally defines agreed-upon rules, criteria, or requirements to guide actions or decisions.</skos:definition>
     </owl:Class>
     
 
@@ -14359,6 +14452,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000032">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060009"/>
         <rdfs:label xml:lang="en">date specification datum</rdfs:label>
+        <skos:definition>A specification datum that represents a date or time interval associated with another specification.</skos:definition>
     </owl:Class>
     
 
@@ -14379,6 +14473,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000034">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
         <rdfs:label xml:lang="en">depth</rdfs:label>
+        <skos:definition>The distance from a reference surface or point to a specific point or feature along a perpendicular or defined direction.</skos:definition>
     </owl:Class>
     
 
@@ -14409,6 +14504,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">callibration process</rdfs:label>
+        <skos:definition>A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability.</skos:definition>
     </owl:Class>
     
 
@@ -14482,7 +14578,26 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <!-- https://w3id.org/pmd/co/VTO_0000044 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000044">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000025"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000022"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/VTO_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134</obo:IAO_0000119>
         <rdfs:label xml:lang="en">vickers indenter angle</rdfs:label>
         <skos:definition>Mean angle between the opposite faces at the vertex of the pyramidal vickers indenter (nominally 136°)</skos:definition>
     </owl:Class>
@@ -14494,6 +14609,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000045">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000033"/>
         <rdfs:label xml:lang="en">polishing process</rdfs:label>
+        <skos:definition>surface finishing process that smooths or shines a material by mechanical, chemical, or electrochemical means to improve its appearance or properties.</skos:definition>
     </owl:Class>
     
 
@@ -14503,6 +14619,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/VTO_0000046">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/VTO_0000045"/>
         <rdfs:label xml:lang="en">electropolishing process</rdfs:label>
+        <skos:definition>An electrochemical process that smooths and brightens a metal surface by selectively removing material through anodic dissolution.</skos:definition>
     </owl:Class>
     
 

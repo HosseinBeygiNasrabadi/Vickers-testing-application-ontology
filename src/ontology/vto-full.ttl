@@ -3565,6 +3565,25 @@ obo:OBI_0001933 rdf:type owl:Class ;
                                       rdfs:label "root node"@en .
 
 
+###  https://w3id.org/pmd/ao/VTO_0000001
+<https://w3id.org/pmd/ao/VTO_0000001> rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( co:VTO_0000004
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty obo:BFO_0000197 ;
+                                                                                   owl:someValuesFrom co:VTO_0000008
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf co:VTO_0000004 ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty obo:BFO_0000197 ;
+                                                        owl:someValuesFrom co:VTO_0000008
+                                                      ] ;
+                                      rdfs:label "indentation diagonal"@en ;
+                                      skos:definition "The straight-line distance between two opposite corners of an indentation made during a hardness test." .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000000
 co:PMD_0000000 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000001 ;
@@ -5970,7 +5989,7 @@ co:PMD_0000813 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000814
 co:PMD_0000814 rdf:type owl:Class ;
-               owl:equivalentClass _:genid345 ;
+               owl:equivalentClass _:genid350 ;
                rdfs:subClassOf obo:BFO_0000029 ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty obo:BFO_0000196 ;
@@ -5981,7 +6000,7 @@ co:PMD_0000814 rdf:type owl:Class ;
                           "laboratory"@en ;
                skos:definition "A place equipped for experimental study in a science or for testing and analysis."@en .
 
-_:genid345 owl:intersectionOf ( obo:BFO_0000029
+_:genid350 owl:intersectionOf ( obo:BFO_0000029
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty obo:BFO_0000196 ;
                                    owl:someValuesFrom co:PMD_0000815
@@ -5992,7 +6011,7 @@ _:genid345 owl:intersectionOf ( obo:BFO_0000029
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0000814 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid345 ;
+   owl:annotatedTarget _:genid350 ;
    co:PMD_0001032 "issue: https://github.com/materialdigital/core-ontology/issues/101"
  ] .
 
@@ -10642,19 +10661,22 @@ co:VTO_0000002 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000003
 co:VTO_0000003 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000774 ;
-               rdfs:label "Vickers hardness testing machine"@en .
+               rdfs:label "Vickers hardness testing machine"@en ;
+               skos:definition "An instrument used to measure the hardness of materials by pressing a diamond-shaped indenter into the surface and evaluating the resulting indentation." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000004
 co:VTO_0000004 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020132 ;
-               rdfs:label "diagonal"@en .
+               rdfs:label "diagonal"@en ;
+               skos:definition "A straight line connecting two non-adjacent corners or vertices of a polygon." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000005
 co:VTO_0000005 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "Verification process"@en .
+               rdfs:label "Verification process"@en ;
+               skos:definition "A process of evaluating whether a system, component, or result meets specified requirements or standards." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000006
@@ -10676,12 +10698,37 @@ co:VTO_0000007 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000008
 co:VTO_0000008 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000029 ;
-               rdfs:label "indentation"@en .
+               rdfs:label "indentation"@en ;
+               skos:definition "A localized impression or mark on a material’s surface created during a hardness test or mechanical interaction." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000009
 co:VTO_0000009 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000602 ;
+               owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000602
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:BFO_0000176 ;
+                                                            owl:someValuesFrom co:PMD_0000774
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ,
+                                   [ owl:intersectionOf ( co:PMD_0000602
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:BFO_0000196 ;
+                                                            owl:someValuesFrom co:VTO_0000010
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf co:PMD_0000602 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000176 ;
+                                 owl:someValuesFrom co:PMD_0000774
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000196 ;
+                                 owl:someValuesFrom co:VTO_0000010
+                               ] ;
                obo:IAO_0000119 "https://www.iso.org/obp/ui#iso:std:iso:23718:ed-1:v1:en:term:1.4.12" ;
                rdfs:label "indenter"@en ;
                skos:definition "body with a hard tip, typically of diamond, hardmetal (tungsten carbide alloy), or, in special cases, steel, of specified geometry through which the test force is applied in the course of an indentation test" .
@@ -10690,32 +10737,49 @@ co:VTO_0000009 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000010
 co:VTO_0000010 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000603 ;
-               rdfs:label "indenter role"@en .
+               rdfs:label "indenter role"@en ;
+               skos:definition "A role played by a tool or component that creates an indentation in a material to facilitate hardness testing or surface characterization." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000011
 co:VTO_0000011 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000603 ;
-               rdfs:label "hardness testing machine role"@en .
+               rdfs:label "hardness testing machine role"@en ;
+               skos:definition "A role played by a machine that performs hardness measurements to determine the resistance of materials to deformation." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000012
 co:VTO_0000012 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000602 ;
-               rdfs:label "optical measuring system"@en .
+               owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000602
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:BFO_0000196 ;
+                                                            owl:someValuesFrom co:VTO_0000027
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf co:PMD_0000602 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000196 ;
+                                 owl:someValuesFrom co:VTO_0000027
+                               ] ;
+               rdfs:label "optical measuring system"@en ;
+               skos:definition "A system that uses light-based techniques, such as lasers or cameras, to measure physical properties, dimensions, or geometries of objects." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000013
 co:VTO_0000013 rdf:type owl:Class ;
                rdfs:subClassOf co:VTO_0000012 ;
-               rdfs:label "vickers machine optical measuring system"@en .
+               rdfs:label "vickers machine optical measuring system"@en ;
+               skos:definition "An optical system integrated with a Vickers hardness testing machine to accurately measure the indentation and determine material hardness." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000014
 co:VTO_0000014 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000030 ;
                rdfs:label "CRM" ,
-                          "certified reference material"@en .
+                          "certified reference material"@en ;
+               skos:definition "A material with one or more well-characterized properties, certified by an authoritative body, used to ensure accuracy and traceability in measurements." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000015
@@ -10737,97 +10801,107 @@ co:VTO_0000016 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000017
 co:VTO_0000017 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
-               rdfs:label "uncertainty"@en .
+               rdfs:label "uncertainty"@en ;
+               skos:definition "A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000018
 co:VTO_0000018 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "measuring process"@en .
+               rdfs:label "measuring process"@en ;
+               skos:definition "A process of determining the value of a physical quantity by comparing it with a defined unit or standard." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000019
 co:VTO_0000019 rdf:type owl:Class ;
                rdfs:subClassOf co:VTO_0000018 ;
-               rdfs:label "temperature measuring process"@en .
+               rdfs:label "temperature measuring process"@en ;
+               skos:definition "A process of determining the thermal state of a system or material by comparing it against a defined temperature scale using appropriate instruments." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000020
 co:VTO_0000020 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "expriment designing process"@en .
+               rdfs:label "expriment designing process"@en ;
+               skos:definition "A process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000021
 co:VTO_0000021 rdf:type owl:Class ;
                rdfs:subClassOf co:VTO_0000018 ;
-               rdfs:label "dimension measuring process"@en .
+               rdfs:label "dimension measuring process"@en ;
+               skos:definition "A process of determining the size, length, width, height, depth, or other geometrical features of an object using defined measurement methods or instruments." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000022
 co:VTO_0000022 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "calculating process"@en .
+               rdfs:label "calculating process"@en ;
+               skos:definition "A process in which numerical or symbolic operations are performed to derive a result from given data or parameters." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000023
 co:VTO_0000023 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "reporting process"@en .
-
-
-###  https://w3id.org/pmd/co/VTO_0000024
-co:VTO_0000024 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020132 ;
-               rdfs:label "dimension"@en .
+               rdfs:label "reporting process"@en ;
+               skos:definition "A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000025
 co:VTO_0000025 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
-               rdfs:label "angle"@en .
+               rdfs:label "angle"@en ;
+               skos:definition "A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000026
 co:VTO_0000026 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000023 ;
-               rdfs:label "certified reference material role"@en .
+               rdfs:label "certified reference material role"@en ;
+               skos:definition "A role played by a material that provides certified property values to support calibration, validation, or quality assurance activities." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000027
 co:VTO_0000027 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000603 ;
-               rdfs:label "optical measuring system role"@en .
+               rdfs:label "optical measuring system role"@en ;
+               skos:definition "A role played by a system that uses optical techniques to measure, observe, or evaluate physical properties or geometries of a material or object." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000028
 co:VTO_0000028 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
-               rdfs:label "time"@en .
+               rdfs:label "time"@en ;
+               skos:definition "A quality that characterizes the duration of processes or events" .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000029
 co:VTO_0000029 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000030 ;
-               rdfs:label "textual entity"@en .
+               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000300" ;
+               rdfs:label "textual entity"@en ;
+               skos:definition "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000030
 co:VTO_0000030 rdf:type owl:Class ;
                rdfs:subClassOf co:VTO_0000029 ;
-               rdfs:label "equation textual entity"@en .
+               rdfs:label "equation textual entity"@en ;
+               skos:definition "A textual entity that represents mathematical or logical relationships using symbolic notation in text form." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000031
 co:VTO_0000031 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000033 ;
-               rdfs:label "standard"@en .
+               rdfs:label "standard"@en ;
+               skos:definition "A specification content that formally defines agreed-upon rules, criteria, or requirements to guide actions or decisions." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000032
 co:VTO_0000032 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0060009 ;
-               rdfs:label "date specification datum"@en .
+               rdfs:label "date specification datum"@en ;
+               skos:definition "A specification datum that represents a date or time interval associated with another specification." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000033
@@ -10841,7 +10915,8 @@ co:VTO_0000033 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000034
 co:VTO_0000034 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020132 ;
-               rdfs:label "depth"@en .
+               rdfs:label "depth"@en ;
+               skos:definition "The distance from a reference surface or point to a specific point or feature along a perpendicular or defined direction." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000035
@@ -10862,7 +10937,8 @@ co:VTO_0000036 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000037
 co:VTO_0000037 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "callibration process"@en .
+               rdfs:label "callibration process"@en ;
+               skos:definition "A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000038
@@ -10915,7 +10991,21 @@ co:VTO_0000043 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/VTO_0000044
 co:VTO_0000044 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000023 ;
+               owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000022
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:IAO_0000417 ;
+                                                            owl:someValuesFrom co:VTO_0000025
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf co:PMD_0000022 ,
+                               co:PMD_0000023 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:IAO_0000417 ;
+                                 owl:someValuesFrom co:VTO_0000025
+                               ] ;
+               obo:IAO_0000119 "https://www.beuth.de/de/norm/din-en-iso-6506-1/204131134" ;
                rdfs:label "vickers indenter angle"@en ;
                skos:definition "Mean angle between the opposite faces at the vertex of the pyramidal vickers indenter (nominally 136°)" .
 
@@ -10923,13 +11013,15 @@ co:VTO_0000044 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/VTO_0000045
 co:VTO_0000045 rdf:type owl:Class ;
                rdfs:subClassOf co:VTO_0000033 ;
-               rdfs:label "polishing process"@en .
+               rdfs:label "polishing process"@en ;
+               skos:definition "surface finishing process that smooths or shines a material by mechanical, chemical, or electrochemical means to improve its appearance or properties." .
 
 
 ###  https://w3id.org/pmd/co/VTO_0000046
 co:VTO_0000046 rdf:type owl:Class ;
                rdfs:subClassOf co:VTO_0000045 ;
-               rdfs:label "electropolishing process"@en .
+               rdfs:label "electropolishing process"@en ;
+               skos:definition "An electrochemical process that smooths and brightens a metal surface by selectively removing material through anodic dissolution." .
 
 
 #################################################################
