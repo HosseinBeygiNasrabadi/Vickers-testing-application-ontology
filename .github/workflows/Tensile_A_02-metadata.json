@@ -1,0 +1,538 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "oa": "http://www.w3.org/ns/oa#",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "http://qudt.org/schema/qudt/",
+            "dc": "http://purl.org/dc/elements/1.1/",
+            "prov": "http://www.w3.org/ns/prov#",
+            "csv": "file:///src/Tensile_A_02.lis/"
+        }
+    ],
+    "@id": "Tensile_A_02.lis",
+    "@type": "http://www.w3.org/ns/csvw#TableGroup",
+    "notes": [
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Versuchsbezeichnung3",
+            "label": "Versuchsbezeichnung                 ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 3,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "ZUG-Versuch"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/VersuchsDatum4",
+            "label": "Versuchs-Datum                      ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 4,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": "2022-10-08T00:00:00",
+                        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Projekt5",
+            "label": "Projekt                             ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 5,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "VH5204"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Werkstoff6",
+            "label": "Werkstoff                           ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 6,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "CuZn38As"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Bearbeiter7",
+            "label": "Bearbeiter                          ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 7,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "NN"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Pruefmaschine8",
+            "label": "Pr\u00fcfmaschine                        ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 8,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "M33"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Probenbezeichnung9",
+            "label": "Probenbezeichnung                   ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 9,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "A_02"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Probenform10",
+            "label": "Probenform                          ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 10,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "ZUG 005.004"
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Probenquerschnitt11",
+            "label": "Probenquerschnitt                   ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 11,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 19.659,
+                        "@type": "http://www.w3.org/2001/XMLSchema#double"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/MilliM2",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Prueftemperatur12",
+            "label": "Pr\u00fcftemperatur                      ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 12,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 26,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/DEG_C",
+                        "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Pruefgeschwindigkeit113",
+            "label": "Pr\u00fcfgeschwindigkeit 1               ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 13,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "oa:TextualBody",
+                    "oa:purpose": "oa:tagging",
+                    "oa:format": "text/plain",
+                    "oa:value": "%/s"
+                },
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 0.025,
+                        "@type": "http://www.w3.org/2001/XMLSchema#double"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Umschaltpunkt14",
+            "label": "Umschaltpunkt                       ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 14,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 1,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/NUM",
+                        "@type": "http://qudt.org/schema/qudt/CountingUnit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Pruefgeschwindigkeit215",
+            "label": "Pr\u00fcfgeschwindigkeit 2               ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 15,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 12,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/MilliM-PER-MIN",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Anfangsmesslaenge16",
+            "label": "Anfangsmessl\u00e4nge                    ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 16,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 25,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/MilliM",
+                        "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/SteigungDesElastischenTeilsMe17",
+            "label": "Steigung des elastischen Teils (mE) ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 17,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 59.5,
+                        "@type": "http://www.w3.org/2001/XMLSchema#double"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/GigaPA",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/DehngrenzeRp0218",
+            "label": "Dehngrenze (Rp0,2)                  ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 18,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 240,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/MegaPA",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Zugfestigkeit19",
+            "label": "Zugfestigkeit                       ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 19,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 348,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/MegaPA",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Bruchdehnung20",
+            "label": "Bruchdehnung                        ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 20,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 36.5,
+                        "@type": "http://www.w3.org/2001/XMLSchema#double"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/PERCENT",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "file:///src/Tensile_A_02.lis/Brucheinschnuerung21",
+            "label": "Brucheinschn\u00fcrung                   ",
+            "@type": "oa:Annotation",
+            "rownum": {
+                "@value": 21,
+                "@type": "xsd:integer"
+            },
+            "oa:hasBody": [
+                {
+                    "@type": "qudt:QuantityValue",
+                    "qudt:value": {
+                        "@value": 69,
+                        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+                    },
+                    "qudt:unit": {
+                        "@id": "http://qudt.org/vocab/unit/PERCENT",
+                        "@type": "http://qudt.org/schema/qudt/Unit"
+                    }
+                }
+            ]
+        }
+    ],
+    "tables": [
+        {
+            "@id": "file:///src/Tensile_A_02.lis/table-1",
+            "url": "Tensile_A_02.lis",
+            "dialect": {
+                "delimiter": "\\t",
+                "skipRows": 28,
+                "headerRowCount": 2,
+                "encoding": "latin-1"
+            },
+            "tableSchema": {
+                "columns": [
+                    {
+                        "@id": "file:///src/Tensile_A_02.lis/table-1-GID",
+                        "name": "GID",
+                        "titles": [
+                            "GID",
+                            "Generic Identifier"
+                        ],
+                        "datatype": "string",
+                        "required": true,
+                        "suppressOutput": true,
+                        "@type": "Column"
+                    },
+                    {
+                        "titles": [
+                            "Zeit",
+                            "sec",
+                            "Zeit"
+                        ],
+                        "@id": "file:///src/Tensile_A_02.lis/table-1-Zeit",
+                        "name": "Zeit",
+                        "qudt:unit": {
+                            "@id": "http://qudt.org/vocab/unit/SEC",
+                            "@type": "http://qudt.org/schema/qudt/Unit"
+                        },
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Weg",
+                            "mm",
+                            "Weg"
+                        ],
+                        "@id": "file:///src/Tensile_A_02.lis/table-1-Weg",
+                        "name": "Weg",
+                        "qudt:unit": {
+                            "@id": "http://qudt.org/vocab/unit/MilliM",
+                            "@type": "http://qudt.org/schema/qudt/DerivedUnit"
+                        },
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Kraft",
+                            "kN",
+                            "Kraft"
+                        ],
+                        "@id": "file:///src/Tensile_A_02.lis/table-1-Kraft",
+                        "name": "Kraft",
+                        "qudt:unit": {
+                            "@id": "http://qudt.org/vocab/unit/KiloN",
+                            "@type": "http://qudt.org/schema/qudt/Unit"
+                        },
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#double"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Dehnung",
+                            "%",
+                            "Dehnung"
+                        ],
+                        "@id": "file:///src/Tensile_A_02.lis/table-1-Dehnung",
+                        "name": "Dehnung",
+                        "qudt:unit": {
+                            "@id": "http://qudt.org/vocab/unit/PERCENT",
+                            "@type": "http://qudt.org/schema/qudt/Unit"
+                        },
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#double"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Spannung",
+                            "MPa",
+                            "Spannung"
+                        ],
+                        "@id": "file:///src/Tensile_A_02.lis/table-1-Spannung",
+                        "name": "Spannung",
+                        "qudt:unit": {
+                            "@id": "http://qudt.org/vocab/unit/MegaPA",
+                            "@type": "http://qudt.org/schema/qudt/Unit"
+                        },
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#double"
+                        }
+                    }
+                ],
+                "primaryKey": "GID",
+                "aboutUrl": "file:///src/Tensile_A_02.lis/table-1-gid-{GID}"
+            }
+        }
+    ],
+    "prov:wasGeneratedBy": {
+        "@id": "https://csvtocsvw.matolab.org/",
+        "@type": "prov:Activity",
+        "prov:wasAssociatedWith": {
+            "@id": "https://github.com/Mat-O-Lab/CSVToCSVW/releases/tag/v1.3.2",
+            "rdfs:label": "CSVtoCSVWv1.3.2",
+            "prov:hadPrimarySource": "https://github.com/Mat-O-Lab/CSVToCSVW",
+            "@type": "prov:SoftwareAgent"
+        }
+    },
+    "prov:generatedAtTime": {
+        "@value": "2025-11-03T10:07:11.938654",
+        "@type": "xsd:dateTime"
+    }
+}
