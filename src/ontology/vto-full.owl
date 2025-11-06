@@ -23,7 +23,7 @@
      xmlns:ontology="https://nfdi.fiz-karlsruhe.de/ontology/"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/vto/vto-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/vto/releases/2025-11-03/vto-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/vto/releases/2025-11-06/vto-full.owl"/>
         <dcterms:creator>https://orcid.org/0000-0002-3092-0532</dcterms:creator>
         <dcterms:description>Vickers Test Ontology (VTO) has developed for representing the Vickers testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6507-1 standard.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
@@ -31,7 +31,7 @@
         <rdfs:comment>Reused ontologies: BFO, RO, PMDco V3.0.0-alpha4, NFDIcore V3.0.0, MWO V3.0.0</rdfs:comment>
         <rdfs:label>vto</rdfs:label>
         <owl:priorVersion>https://gitlab.com/kupferdigital/process-graphs/vickers-hardness-test</owl:priorVersion>
-        <owl:versionInfo>2025-11-03</owl:versionInfo>
+        <owl:versionInfo>2025-11-06</owl:versionInfo>
     </owl:Ontology>
     
 
