@@ -1,0 +1,151 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "oa": "http://www.w3.org/ns/oa#",
+            "label": "http://www.w3.org/2000/01/rdf-schema#label",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "http://qudt.org/schema/qudt/",
+            "dc": "http://purl.org/dc/elements/1.1/",
+            "prov": "http://www.w3.org/ns/prov#",
+            "csv": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/"
+        }
+    ],
+    "@id": "Vickers_A%20%282%29.csv",
+    "@type": "http://www.w3.org/ns/csvw#TableGroup",
+    "notes": [],
+    "tables": [
+        {
+            "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1",
+            "url": "Vickers_A%20%282%29.csv",
+            "dialect": {
+                "delimiter": ",",
+                "skipRows": 0,
+                "headerRowCount": 2,
+                "encoding": "utf-8"
+            },
+            "tableSchema": {
+                "columns": [
+                    {
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-GID",
+                        "name": "GID",
+                        "titles": [
+                            "GID",
+                            "Generic Identifier"
+                        ],
+                        "datatype": "string",
+                        "required": true,
+                        "suppressOutput": true,
+                        "@type": "Column"
+                    },
+                    {
+                        "titles": [
+                            "Versuchsbezeichnung",
+                            "Norm",
+                            "Versuchsbezeichnung"
+                        ],
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-Versuchsbezeichnung",
+                        "name": "Versuchsbezeichnung",
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "H\u00e4rtepr\u00fcfung nach Vickers",
+                            "DIN EN ISO 6507-1:2018",
+                            "HaertepruefungNachVickers"
+                        ],
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-HaertepruefungNachVickers",
+                        "name": "HaertepruefungNachVickers",
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Unnamed: 2_level_0",
+                            "Unnamed: 2_level_1",
+                            "Unnamed2Level0"
+                        ],
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-Unnamed2Level0",
+                        "name": "Unnamed2Level0",
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Unnamed: 3_level_0",
+                            "Unnamed: 3_level_1",
+                            "Unnamed3Level0"
+                        ],
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-Unnamed3Level0",
+                        "name": "Unnamed3Level0",
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Unnamed: 4_level_0",
+                            "Unnamed: 4_level_1",
+                            "Unnamed4Level0"
+                        ],
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-Unnamed4Level0",
+                        "name": "Unnamed4Level0",
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    },
+                    {
+                        "titles": [
+                            "Unnamed: 5_level_0",
+                            "Unnamed: 5_level_1",
+                            "Unnamed5Level0"
+                        ],
+                        "@id": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-Unnamed5Level0",
+                        "name": "Unnamed5Level0",
+                        "@type": [
+                            "Column"
+                        ],
+                        "format": {
+                            "@id": "http://www.w3.org/2001/XMLSchema#string"
+                        }
+                    }
+                ],
+                "primaryKey": "GID",
+                "aboutUrl": "file:///src/Vickers_A%20(2).csvVickers_A%20%282%29.csv/table-1-gid-{GID}"
+            }
+        }
+    ],
+    "prov:wasGeneratedBy": {
+        "@id": "https://csvtocsvw.matolab.org/",
+        "@type": "prov:Activity",
+        "prov:wasAssociatedWith": {
+            "@id": "https://github.com/Mat-O-Lab/CSVToCSVW/releases/tag/v1.3.2",
+            "rdfs:label": "CSVtoCSVWv1.3.2",
+            "prov:hadPrimarySource": "https://github.com/Mat-O-Lab/CSVToCSVW",
+            "@type": "prov:SoftwareAgent"
+        }
+    },
+    "prov:generatedAtTime": {
+        "@value": "2025-11-03T09:57:40.231486",
+        "@type": "xsd:dateTime"
+    }
+}
