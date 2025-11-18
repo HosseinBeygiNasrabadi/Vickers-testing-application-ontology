@@ -23,7 +23,7 @@
 @base <https://w3id.org/pmd/ao/vto/vto-full.ttl> .
 
 <https://w3id.org/pmd/ao/vto/vto-full.ttl> rdf:type owl:Ontology ;
-                                            owl:versionIRI <https://w3id.org/pmd/ao/vto/releases/2025-11-06/vto-full.ttl> ;
+                                            owl:versionIRI <https://w3id.org/pmd/ao/vto/releases/2025-11-18/vto-full.ttl> ;
                                             dcterms:creator "https://orcid.org/0000-0002-3092-0532" ;
                                             dcterms:description "Vickers Test Ontology (VTO) has developed for representing the Vickers testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6507-1 standard." ;
                                             dcterms:license <https://creativecommons.org/licenses/unspecified> ;
@@ -31,7 +31,7 @@
                                             rdfs:comment "Reused ontologies: BFO, RO, PMDco V3.0.0-alpha4, NFDIcore V3.0.0, MWO V3.0.0" ;
                                             rdfs:label "vto" ;
                                             owl:priorVersion "https://gitlab.com/kupferdigital/process-graphs/vickers-hardness-test" ;
-                                            owl:versionInfo "2025-11-06" .
+                                            owl:versionInfo "2025-11-18" .
 
 #################################################################
 #    Annotation properties
