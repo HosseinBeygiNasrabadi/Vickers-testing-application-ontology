@@ -1,0 +1,80 @@
+@prefix bfo: <http://purl.obolibrary.org/obo/bfo/2020/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iao: <http://purl.obolibrary.org/obo/> .
+@prefix mwo: <https://nfdi.fiz-karlsruhe.de/mwo/> .
+@prefix nfdicore: <http://nfdi.fiz-karlsruhe.de/ontology/> .
+@prefix ns1: <https://nfdi.fiz-karlsruhe.de/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+nfdicore:hasContactPoint a owl:ObjectProperty .
+
+bfo:bearer_of a owl:ObjectProperty .
+
+bfo:has_participant a owl:ObjectProperty .
+
+bfo:is_concretized_by a owl:ObjectProperty .
+
+bfo:participates_in a owl:ObjectProperty .
+
+bfo:realizes a owl:ObjectProperty .
+
+iao:denoted_by a owl:ObjectProperty .
+
+mwo: a owl:Ontology ;
+    rdfs:label "NFDI-Contact point ODP" ;
+    dc:title "" ;
+    dcterms:abstract "" ;
+    dcterms:created "" ;
+    dcterms:creator "",
+        "Ebrahim Norouzi",
+        "Hossein Beygi Nasrabadi" ;
+    dcterms:licence "" ;
+    rdfs:status "" ;
+    owl:versionInfo "" .
+
+mwo:NfdiResource_x a owl:NamedIndividual,
+        ns1:Software ;
+    nfdicore:hasContactPoint mwo:ContactPoint_X ;
+    bfo:is_concretized_by mwo:ContactPointRole_X ;
+    bfo:participates_in mwo:Process_X .
+
+nfdicore:Agent a owl:Class .
+
+nfdicore:ContactPointRole a owl:Class .
+
+nfdicore:Website a owl:Class .
+
+iao:EmailAddress a owl:Class .
+
+iao:WrittenName a owl:Class .
+
+bfo:Process a owl:Class .
+
+mwo:ContactPointName_ a iao:WrittenName,
+        owl:NamedIndividual .
+
+mwo:ContactPointWebsite_ a nfdicore:Website,
+        owl:NamedIndividual .
+
+mwo:EmailAddress_ a iao:EmailAddress,
+        owl:NamedIndividual .
+
+mwo:Process_X a bfo:Process,
+        owl:NamedIndividual ;
+    bfo:has_participant mwo:ContactPoint_X ;
+    bfo:realizes mwo:ContactPointRole_X .
+
+ns1:Software a owl:Class .
+
+mwo:ContactPoint_X a nfdicore:Agent,
+        owl:NamedIndividual ;
+    bfo:bearer_of mwo:ContactPointRole_X ;
+    iao:denoted_by mwo:ContactPointName_ .
+
+mwo:ContactPointRole_X a nfdicore:ContactPointRole,
+        owl:NamedIndividual ;
+    iao:denoted_by mwo:ContactPointWebsite_,
+        mwo:EmailAddress_ .
+
