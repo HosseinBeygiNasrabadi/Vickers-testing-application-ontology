@@ -4431,7 +4431,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000604 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (differential scanning calorimeter)
+# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
 
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000605 "differential scanning calorimeter"@en)
@@ -4774,7 +4774,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (Druckumformen)
+# Class: co:PMD_0000650 (forming under compressive conditions)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
 AnnotationAssertion(terms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
@@ -4852,7 +4852,7 @@ AnnotationAssertion(skos:definition co:PMD_0000657 "A device used for separating
 AnnotationAssertion(skos:definition co:PMD_0000657 "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch unter Verwendung einer chromatographischen Säule."@de)
 SubClassOf(co:PMD_0000657 co:PMD_0000557)
 
-# Class: co:PMD_0000658 (Gel-Permeations-Chromatographie Verfahren)
+# Class: co:PMD_0000658 (gel permeation chromatography process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000658 "Gel-Permeations-Chromatographie Verfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000658 "gel permeation chromatography process"@en)
@@ -5255,7 +5255,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (joining by shaping)
+# Class: co:PMD_0000808 (Fügen Durch Umformen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Official definition can be found in: DIN 8593-5"@en)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Offizielle Definition findet man in: DIN 8593-5"@de)
@@ -5695,7 +5695,7 @@ AnnotationAssertion(skos:definition co:PMD_0000874 "A microscope that uses visib
 AnnotationAssertion(skos:definition co:PMD_0000874 "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de)
 SubClassOf(co:PMD_0000874 co:PMD_0000855)
 
-# Class: co:PMD_0000875 (optical microscopy)
+# Class: co:PMD_0000875 (Optische Mikroskopie)
 
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist."@de)
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Optische Mikroskopie"@de)
@@ -5874,7 +5874,7 @@ AnnotationAssertion(skos:definition co:PMD_0000899 "Ein Herstellungsprozess, der
 AnnotationAssertion(skos:example co:PMD_0000899 "Casting, Sintering"@en)
 SubClassOf(co:PMD_0000899 co:PMD_0000833)
 
-# Class: co:PMD_0000900 (Urformen Durch Additive Fertigung)
+# Class: co:PMD_0000900 (primary shaping by additive manufacturing)
 
 AnnotationAssertion(rdfs:label co:PMD_0000900 "Urformen Durch Additive Fertigung"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000900 "primary shaping by additive manufacturing"@en)
@@ -6213,7 +6213,7 @@ AnnotationAssertion(skos:definition co:PMD_0000942 "The specific surface area is
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000942 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000942 co:PMD_0020131)
 
-# Class: co:PMD_0000944 (spectrometer)
+# Class: co:PMD_0000944 (Spektrometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000944 "Spektrometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000944 "spectrometer"@en)
@@ -6300,7 +6300,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (structural property analyzing process)
+# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000957 "structural property analyzing process"@en)
@@ -6332,7 +6332,7 @@ AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a p
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000961 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000961 co:PMD_0000882)
 
-# Class: co:PMD_0000962 (supercritical fluid chromatography process)
+# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000962 "supercritical fluid chromatography process"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000962 "Überkritische Fluidchromatographie Verfahren"@de)
@@ -6487,7 +6487,7 @@ AnnotationAssertion(skos:example co:PMD_0000979 "Measuring the thermal conductiv
 AnnotationAssertion(co:PMD_0050117 co:PMD_0000979 "TCMP"@en)
 SubClassOf(co:PMD_0000979 co:PMD_0000982)
 
-# Class: co:PMD_0000980 (Wärmeleitfähigkeitsmessfunktion)
+# Class: co:PMD_0000980 (thermal conductivity measuring function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000980 "Wärmeleitfähigkeitsmessfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000980 "thermal conductivity measuring function"@en)
