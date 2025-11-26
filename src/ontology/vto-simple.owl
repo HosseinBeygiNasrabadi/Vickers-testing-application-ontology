@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/vto/vto-simple.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/vto/releases/2025-11-19/vto-simple.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/vto/releases/2025-11-26/vto-simple.owl"/>
         <terms:creator>https://orcid.org/0000-0002-3092-0532</terms:creator>
         <terms:description>Vickers Test Ontology (VTO) has developed for representing the Vickers testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6507-1 standard.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
@@ -20,7 +20,7 @@
         <rdfs:comment>Reused ontologies: BFO, RO, PMDco V3.0.0-alpha4, NFDIcore V3.0.0, MWO V3.0.0</rdfs:comment>
         <rdfs:label>vto</rdfs:label>
         <owl:priorVersion>https://gitlab.com/kupferdigital/process-graphs/vickers-hardness-test</owl:priorVersion>
-        <owl:versionInfo>2025-11-19</owl:versionInfo>
+        <owl:versionInfo>2025-11-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -454,29 +454,13 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <!-- https://w3id.org/pmd/co/PMD_0020005 -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0020005">
-        <rdfs:label xml:lang="en">consists of</rdfs:label>
-        <skos:definition xml:lang="en">A continuant part property that relates Material Entity Aggregates in the direction of smaller length-scale.</skos:definition>
-        <skos:example xml:lang="en">A portion of steel consists of a portion of carbon and a portion of iron.</skos:example>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0020005"/>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0020022 -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0020022">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020005"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000196"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">TODO: check if we should force the &apos;o&apos; to be a portion of matter&apos; through:
-http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29
-or
-https://www.w3.org/TR/swbp-n-aryRelations/</rdfs:comment>
-        <rdfs:label xml:lang="en">intensive bearer of</rdfs:label>
-        <skos:definition xml:lang="en">Intensive bearer of is a chain that allows to connect objects to intensive properties through &quot;the matter they consist of&quot;.</skos:definition>
-        <skos:example xml:lang="en">This piece of metal intensive bearer of some temperature.</skos:example>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0020022"/>
 </rdf:RDF>
 
 
