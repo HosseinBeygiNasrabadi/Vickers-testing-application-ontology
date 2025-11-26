@@ -1,0 +1,57 @@
+Versuchsbezeichnung;Härteprüfung nach Vickers;
+Norm;DIN EN ISO 6507-1:2018;
+Versuchs-Datum;27.04.2022;
+Antrag;H0030;
+Projekt;VH5204;
+Bearbeiter;NN;
+
+
+Probenbezeichnung;A;
+Werkstoff;CuZn38As;
+Probe Vorbereitung;NN;
+Probe Dimension;8*8*8;mm3;
+Prüfmaschine;KB 30 SR FA Basic;
+Prüftemperatur;21;°C;
+Prüfkraft F;49.3;N;
+Einwirkdauer der Prüfkraft;14;s;
+Eindringkörper;1346;
+Eindringkörper Material;Diamant;
+Eindringwinkel;136;
+CRM Härtevergleichsplatte Nr.;8890101.0620;
+CRM Härte Hc/XCRM;213.3;HV 5;
+CRM Gemessener Diagonaldurchschnitt;207.45;µm;
+CRM gemessene Härte Durchschnitt;215.5;HV 5;
+CRM gemessene Härte sH;0.141;HV 5;
+CRM Konstante UCRM;2.4;HV 5;
+CRM Anzahl der Härteeindrücke;2;
+CRM Konstante t;1.84;
+CRM Konstante Sigma ms;0.00026;mm;
+rrel;0.06;%;
+Abstand zwischen den Eindrücken;im Standardbereich;mm;
+Abstand zwischen den Eindrücken und Rand;im Standardbereich;mm;
+
+
+Durchschnittlicher Durchmesser der Vertiefung;273.11;µm;
+durchschnittliche Brinellhärte;124.3;HV 5;
+Standardabweichung Brinellhärte;1.6;HV 5;
+
+
+Berechnung der Unsicherheit- Härtemesswerte für das Protokoll 1;
+Standardunsicherheit aufgrund des Mangels an Wiederholpräzision uH;0.260;HV 5;
+Standardunsicherheit aufgrund der Auflösung der Anzeige für den Härtewert ums;-0.068;HV 5;
+Messunsicherheit aufgrund der Standardunsicherheit der systematischen uHTM;2.417;HV 5;
+Bestimmung der erweiterten Unsicherheit UM1;4.866;HV 5;
+Vickers-Härte-Bias;1.031;HV 5;
+Bestimmung der Unsicherheit Härtemesswerte – Methode M1 nach DIN;5.9;HV 5;
+Ergebnis;124 ± 6;HV 5;
+   
+
+
+[Daten]
+Probennummer;d1;d2;d;HV ;Bemerkung
+;µm;µm;µm;HV 5;
+A-1;270.47;279.52;275.00;122.6;
+A-2;271.77;277.20;274.49;123.1;
+A-3;269.96;276.42;273.19;124.3;
+A-4;267.89;273.32;270.61;126.6;
+A-5;267.37;277.20;272.29;125.1;
